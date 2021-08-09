@@ -6,7 +6,7 @@ function Show(ip) {
     var result = str.fontcolor("red");
     const fetchIsp = fetch("https://ipgeolocation.abstractapi.com/v1/?api_key=1be9a6884abd4c3ea143b59ca317c6b2");
     const StreamPromis = fetchIsp.then((response) => response.json())
-    StreamPromis.then((j) => header.innerHTML += "ISP:"+j.connection.isp_name + " • Status: " + result);
+    StreamPromis.then((j) => header.innerHTML += "ISP:"+j.connection.isp_name +" • City: " + j.city+ " • Status: " + result);
 
     
     header.innerHTML += "Your IP:" +ip.ip + " • ";
