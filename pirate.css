@@ -72,6 +72,10 @@ a:hover ~ #post-s{
     margin-right:auto;
     width:50%;
     height:50%;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
 }
 .container{
     width:100%;
