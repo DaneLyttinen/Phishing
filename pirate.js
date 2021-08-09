@@ -11,14 +11,6 @@ function Show(ip) {
     
     header.innerHTML += "Your IP:" +ip.ip + " • ";
 }
-var counter = 0
-function enter() {
-    counter += 1
-    if (counter > 1){
-        document.getElementById("post-s").style.width="100%";
-        document.getElementById("iframe").style.pointerEvents="none";
-    }
-}
 
 function showIp() {
     const fetchIp = fetch("https://api64.ipify.org?format=json");
